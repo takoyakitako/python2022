@@ -3,7 +3,7 @@ import random
 
 t = turtle.Turtle("turtle")
 
-def moveKame(x, y):
+def moveTurtle(x, y):
     t.goto(x, y)
     tSize = random.randrange(2, 10)
     t.shapesize(tSize)
@@ -22,6 +22,6 @@ def moveKame(x, y):
 tSize, tAngle = 0, 0
 r, g, b = 0.0, 0.0, 0.0
 
-t.screen.onclick(moveKame)
+t.screen.onclick(moveTurtle)
 
 turtle.done()
